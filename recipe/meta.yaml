@@ -1,5 +1,5 @@
 {% set name = "asdf-standard" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/asdf_standard-{{ version }}.tar.gz
-  sha256: fb7467e354f60072ebbb716615c3add52f20a8823039040271b9a396065229b5
+  sha256: 01535bc2b15bfc09ec8a62d4999f9cf32dc49dc71660c8425640228fd8776102
 
 build:
   noarch: python
