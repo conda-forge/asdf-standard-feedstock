@@ -1,5 +1,5 @@
 {% set name = "asdf-standard" %}
-{% set version = "1.0.3" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/asdf_standard-{{ version }}.tar.gz
-  sha256: afd8ff9a70e7b17f6bcc64eb92a544867d5d4fe1f0076719142fdf62b96cfd44
+  sha256: fb7467e354f60072ebbb716615c3add52f20a8823039040271b9a396065229b5
 
 build:
   noarch: python
@@ -17,12 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
     - setuptools
     - setuptools-scm
   run:
-    - importlib-resources >=3
-    - python >=3.8
+    - python >=3.9
 
 test:
   imports:
